@@ -33,8 +33,6 @@ github_username:  tungchiahui
 theme: tung_theme
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
 
 # Exclude from processing.
