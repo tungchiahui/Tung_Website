@@ -32,7 +32,7 @@ github_username:  tungchiahui
 # Build settings
 theme: tung_theme
 plugins:
-  - jekyll-fee
+  - jekyll-feed
   - jekyll-seo-tag
 
 
