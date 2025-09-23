@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll Tung!"
+title:  "Welcome to Tung's Website!"
 date:   2025-09-23 23:45:37 +0800
 categories: jekyll update
 ---
