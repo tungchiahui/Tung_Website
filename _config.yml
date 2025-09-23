@@ -32,7 +32,8 @@ github_username:  tungchiahui
 # Build settings
 theme: tung_theme
 plugins:
-  - jekyll-feed
+  - jekyll-fee
+  - jekyll-seo-tag
 
 
 # Exclude from processing.
