@@ -35,6 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # 自定义主题
 gem 'tung_theme', path: File.expand_path('tung_theme', __dir__)
 
-group :jekyll_plugins do
-  gem "jekyll-seo-tag"
-end
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
