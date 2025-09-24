@@ -1,0 +1,64 @@
+name: Build Jekyll and Deploy to _site Branch
+
+on:
+  push:
+    branches: [ main ]  # 当主分支有推送时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 检出主分支代码
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0  # 获取所有历史记录和分支信息
+
+      # 2. 检查 _site 分支是否存在
+      - name: Check if _site branch exists
+        id: check-branch
+        run: |
+          if git ls-remote --exit-code --heads origin _site; then
+            echo "branch_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "branch_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      # 3. 如果分支不存在，创建空的 _site 分支
+      - name: Create _site branch if needed
+        if: steps.check-branch.outputs.branch_exists == 'false'
+        run: |
+          git checkout --orphan _site
+          git rm -rf .
+          echo "# Empty _site branch" > README.md
+          git add README.md
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git commit -m "Initial commit for _site branch"
+          git push origin _site
+          git checkout main
+
+      # 4. 设置 Ruby 环境
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      # 5. 安装依赖并构建Jekyll站点
+      - name: Build with Jekyll
+        run: |
+          bundle install
+          bundle exec jekyll build
+
+      # 6. 部署生成的_site内容到_site分支
+      - name: Deploy to _site branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          destination_branch: _site
+          keep_files: false
+          force_orphan: true
