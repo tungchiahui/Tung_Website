@@ -2,11 +2,13 @@ name: Build Jekyll and Deploy to _site Branch
 
 on:
   push:
-    branches: [ main ]  # 当主分支有推送时触发
+    branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       # 1. 检出主分支代码
@@ -14,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          fetch-depth: 0  # 获取所有历史记录和分支信息
+          fetch-depth: 0
 
       # 2. 检查 _site 分支是否存在
       - name: Check if _site branch exists
@@ -30,12 +32,12 @@ jobs:
       - name: Create _site branch if needed
         if: steps.check-branch.outputs.branch_exists == 'false'
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan _site
-          git rm -rf .
+          git rm -rf . || true
           echo "# Empty _site branch" > README.md
           git add README.md
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
           git commit -m "Initial commit for _site branch"
           git push origin _site
           git checkout main
@@ -59,6 +61,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_branch: _site
+          publish_branch: _site  # 修正参数名
           keep_files: false
           force_orphan: true
