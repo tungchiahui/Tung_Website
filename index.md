@@ -1,6 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: 首页
 ---
+
+# 欢迎来到Tung Chia-hui的个人网站 👋
+
+这里主要记录：
+- 编程（C/C++、Linux、ROS2、嵌入式开发）
+- 学习笔记
+- 一些随笔和感想  
+
+👉 点击这里进入 [博客文章]({{ '/blog/' | relative_url }})  
