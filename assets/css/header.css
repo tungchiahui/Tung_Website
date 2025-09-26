@@ -2,7 +2,7 @@
 
 /* header 背景图 + 全屏宽 */
 header {
-  background: url("/assets/images/header-bg.png") no-repeat center center;
+  background: url("/assets/images/header-bg.jpg") no-repeat center center;
   background-size: cover;   /* 背景铺满 */
   width: 100%;
   padding: 60px 20px;       /* 内边距，增加高度 */
