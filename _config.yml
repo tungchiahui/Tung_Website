@@ -16,7 +16,7 @@ icp: "鲁ICP备2025185601号-2"       # 工信部备案号
 beian: "xxxxxxxxxxxxxx"            # 公安备案号
 # 自定义变量，可以在 footer.html 中用 {{ site.icp }} 和 {{ site.beian }} 调用
 
-# 社交/联系方式配置
+# 社交/联系方式配置(没有就写空字符串)
 social:
   email: "mailto:tungchiahui@gmail.com"
   website: "https://tungchiahui.cn"
@@ -27,6 +27,8 @@ social:
   coolapk: "http://www.coolapk.com/u/3224578"
   twitter: "https://twitter.com/tungchiahui"
   youtube: "https://www.youtube.com/@Chia-huiTung"
+  facebook: "https://www.facebook.com/tungchiahui"
+  instagram: "https://www.instagram.com/tungchiahui"
 
 
 
