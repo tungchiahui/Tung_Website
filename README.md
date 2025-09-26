@@ -2,14 +2,15 @@
 
 ✨ 访问国内站点  
 👉 [**tungchiahui.cn**](https://tungchiahui.cn)  
-🛠 部署平台：*Tencent EdgeOne Pages*  
+🛠 部署平台：*腾讯 EdgeOne Pages*  
+⚡ 内容分发：*腾讯边缘安全加速平台 EdgeOne CDN*  
 
 ---
 
 🌎 Visit the Global Site  
 👉 [**global.tungchiahui.cn**](https://global.tungchiahui.cn)  
-🛠 Hosted on: *Cloudflare Pages*
-
+🛠 Deployed to: *Cloudflare Pages*  
+⚡ Delivered via: *Tencent EdgeOne CDN*
 
 ---
 
