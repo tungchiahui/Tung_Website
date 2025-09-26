@@ -13,7 +13,7 @@ url: "https://tungchiahui.cn" # 网站主域名，建议写完整带 https:// �
 
 # ICP 与公安备案号（自定义字段）
 icp: "鲁ICP备2025185601号-2"       # 工信部备案号
-beian: "33010602000000"            # 公安备案号
+beian: "xxxxxxxxxxxxxx"            # 公安备案号
 # 自定义变量，可以在 footer.html 中用 {{ site.icp }} 和 {{ site.beian }} 调用
 
 # 社交/联系方式配置
