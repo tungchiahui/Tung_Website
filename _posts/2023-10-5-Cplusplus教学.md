@@ -1,7 +1,6 @@
 ---
+layout: post
 title: C/C++教程
-author: 
-  - Tung Chia-hui
 tags:
   - C/C++
 ---

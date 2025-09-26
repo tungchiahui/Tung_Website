@@ -1,8 +1,6 @@
 ---
+layout: post
 title: Linux-STM32-CMake-VScode环境搭建
-author: 
-  - Tung Chia-hui
-  - 房梓豪
 tags:
   - 环境搭建
   - Linux

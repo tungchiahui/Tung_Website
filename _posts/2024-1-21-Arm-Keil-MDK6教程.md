@@ -1,7 +1,6 @@
 ---
+layout: post
 title: Arm-Keil-MDK6教程
-author: 
-  - Tung Chia-hui
 tags:
   - 环境搭建
   - STM32

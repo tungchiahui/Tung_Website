@@ -1,7 +1,6 @@
 ---
+layout: post
 title: STM32-FreeRTOS教程
-author: 
-  - Tung Chia-hui
 tags:
   - STM32
   - RTOS
