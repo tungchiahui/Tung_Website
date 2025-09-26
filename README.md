@@ -10,12 +10,22 @@
 
 <div align="center">
 
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages)  
-<br>  
+[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages)
+<br>
 
 [![Deploy with Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-338af3?style=for-the-badge&logo=cloudflare)](https://dash.cloudflare.com/)
+<br>
+
+[![Deploy with GitHub Pages](https://img.shields.io/badge/Deploy%20to-GitHub%20Pages-181717?style=for-the-badge&logo=github)](https://docs.github.com/zh/pages)
+<br>
+
+[![Deploy with Vercel](https://img.shields.io/badge/Deploy%20to-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/new)
+<br>
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
 
 </div>
 
 ---
+
 ✨ 部署完成后即可访问你的网站！
