@@ -1,6 +1,15 @@
 # 🚀 Tung_Website
 
-🌐 请访问 👉 [**tungchiahui.cn**](https://tungchiahui.cn) 来访问本网站！
+✨ 访问国内站点  
+👉 [**tungchiahui.cn**](https://tungchiahui.cn)  
+🛠 部署平台：*Tencent EdgeOne Pages*  
+
+---
+
+🌎 Visit the Global Site  
+👉 [**global.tungchiahui.cn**](https://global.tungchiahui.cn)  
+🛠 Hosted on: *Cloudflare Pages*
+
 
 ---
 
